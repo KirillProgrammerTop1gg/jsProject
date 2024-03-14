@@ -1,0 +1,53 @@
+.info{
+    &__section{
+        border-top: 1px solid;
+        padding: 36px 0;
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        text-align: center;
+    }
+    &__scientists{
+        width: 577px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 36px 59px;
+        margin-top: 36px;
+    }
+    &__scientist{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: #D9D9D9;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        font-size: 14px;
+    }
+    &__prompts{
+        margin-top: 36px;
+        gap: 20px 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    &__but{
+        border-radius: 20px;
+        padding: 10px 20px;
+        height: 35px;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+        background: #000;
+        padding: 10px 20px;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+}
