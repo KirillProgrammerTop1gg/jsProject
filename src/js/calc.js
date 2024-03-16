@@ -15,5 +15,5 @@ buttonAdditive.addEventListener("click", () => calcEvent = "+")
 buttonMultiplie.addEventListener("click", () => calcEvent = "*")
 buttonDivide.addEventListener("click", () => calcEvent = "/")
 
-buttonResult.addEventListener("click", () => c.innerHTML = eval(number.value + calcEvent + number2.value))
+buttonResult.addEventListener("click", () => equals.innerHTML = eval(number.value + calcEvent + number2.value))
 console.log()
