@@ -1,21 +1,25 @@
-<section class="calc__section">
+<section class="calc">
   <div class="calc__div">
     <h3 class="calc__title">Калькулятор</h3>
     <ul class="calc__list">
       <li class="calc__item">
         <input class="calc__number" type="text" placeholder="Введіть число">
       </li>
-      <li class="calc__item">
-        <button class="calc__button" id="1">-</button>
-      </li>
-      <li class="calc__item">
-        <button class="calc__button" id="2">+</button>
-      </li>
-      <li class="calc__item">
-        <button class="calc__button" id="3">*</button>
-      </li>
-      <li class="calc__item">
-        <button class="calc__button" id="4">/</button>
+      <li class="calc__items">
+        <ul class="calc__buttons">
+          <li class="calc__item">
+            <button class="calc__button" id="button1">-</button>
+          </li>
+          <li class="calc__item">
+            <button class="calc__button" id="button2">+</button>
+          </li>
+          <li class="calc__item">
+            <button class="calc__button" id="button3">*</button>
+          </li>
+          <li class="calc__item">
+            <button class="calc__button" id="button4">/</button>
+          </li>
+        </ul>
       </li>
       <li class="calc__item">
         <input class="calc__number2" type="text" placeholder="Введіть число">
@@ -24,7 +28,7 @@
         <button class="calc__equals">=</button>
       </li>
       <li>
-        <input class="calc__result" type="text">
+        <p class="calc__result">Результат</p>
       </li>
     </ul>
   </div>
