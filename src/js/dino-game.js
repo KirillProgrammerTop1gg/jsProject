@@ -113,5 +113,7 @@ document.addEventListener('keydown', startGame);
 resultsEl.innerHTML = `
     Press 'g' to start the game
     <br>
+    Press 'w' to jump
+    <br>
     Record ${localStorage.getItem('dinoRecord') === null ? 0 : localStorage.getItem('dinoRecord')}
 `

@@ -3,4 +3,25 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: "Montserrat Alternates";
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+main{
+    background-image: url('../images/bg.png');
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+.border{
+    border-top: 1px solid;
+    width: 536px;
+    margin: 0 auto;
+}
+.container{
+    width: 1090px;
+    background: #fff;
+    margin: 0 auto;
 }

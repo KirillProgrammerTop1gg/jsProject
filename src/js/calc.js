@@ -1,5 +1,5 @@
-const number = document.querySelector('.calc__number')
-const number2 = document.querySelector('.calc__number2')
+const number = document.querySelector('.calc__number[data-input="1"]')
+const number2 = document.querySelector('.calc__number[data-input="2"]')
 let equals = document.querySelector('.calc__result')
 
 const buttonMinus = document.querySelector("#button1")
