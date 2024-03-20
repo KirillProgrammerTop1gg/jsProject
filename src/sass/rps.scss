@@ -1,7 +1,9 @@
 .rps{
     &__section{
-        border-top: 1px solid;
         padding: 36px 0;
+        margin-left: 418px;
+        display: flex;
+        gap: 104px;
     }
     &__title{
         font-weight: 400;
@@ -9,12 +11,12 @@
         color: #000;
     }
     &__container{
-        margin-top: 36px;
         display: flex;
-        height: 60px;
-        gap: 104px;
+        flex-direction: column;
+        align-items: center;
     }
     &__list{
+        margin-top: 36px;
         width: 256px;
         height: 60px;
         display: flex;
@@ -46,5 +48,12 @@
         color: #fff;
         font-weight: 400;
         font-style: normal;
+    }
+    &__results{
+        margin-top: 56px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 170%;
+        color: #000;
     }
 }

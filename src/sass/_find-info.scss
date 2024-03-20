@@ -1,7 +1,8 @@
 .info{
     &__section{
-        border-top: 1px solid;
         padding: 36px 0;
+        margin: 0 auto;
+        width: 857px;
     }
     &__title{
         font-weight: 400;
@@ -15,7 +16,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 36px 59px;
-        margin-top: 36px;
+        margin: 36px auto 0;
     }
     &__scientist{
         width: 100px;
@@ -35,7 +36,7 @@
         margin-top: 36px;
         gap: 20px 36px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         list-style: none;

@@ -10,8 +10,9 @@ const showIndication = () => {
 }
 
 leftArrowEl.addEventListener('click', () => {
-    console.log(slide)
+    rightArrowEl.style.opacity = '1';
     slide -= slide > 0 ? 315 : 0;
+    if (slide<315) leftArrowEl.style.opacity = '0';
     showIndication();
     galleryEl.scrollTo({
         left: slide,
@@ -20,8 +21,9 @@ leftArrowEl.addEventListener('click', () => {
 })
 
 rightArrowEl.addEventListener('click', () => {
-    console.log(slide)
+    leftArrowEl.style.opacity = '1';
     slide += slide < 630 ? 315 : 0;
+    if (slide>315) rightArrowEl.style.opacity = '0';
     showIndication();
     galleryEl.scrollTo({
         left: slide,
