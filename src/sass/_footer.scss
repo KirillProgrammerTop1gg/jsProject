@@ -43,8 +43,8 @@
   &__tools{
     display: flex;
   }
-  &__tell{
-  }
+  // &__tell{
+  // }
   &__inputer{
     background-color: #D7D7D7;
     border: none;
@@ -71,5 +71,7 @@
     font-family: 'Montserrat Alternates';
     font-size: 6px;
     line-height: 7.31px;
+    margin-left: 188px;
+    margin-bottom: 63px;
   }
 }
