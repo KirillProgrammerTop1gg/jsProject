@@ -1,14 +1,13 @@
 .time-calc{
-    width: 536px;
-    height: 163px;
-    border-top: 1px solid;
+    width: 392px;
     padding: 36px 0;
+    margin-left: 313px;
     &__title{
         font-weight: 400;
         font-size: 16px;
         color: #000;
         margin-bottom: 36px;
-        text-align: center;
+        margin-left: 151px;
     }
     &__list{
         display: flex;
@@ -16,8 +15,6 @@
         align-items: center;
         width: 392px;
         height: 35px;
-        margin-left: 35px;
-        margin-right: 109px;
     }
     &__indentation{
         stroke-width: 1px;

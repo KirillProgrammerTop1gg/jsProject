@@ -1,7 +1,8 @@
 .gallery {
     &__section{
         padding: 36px 0;
-        border-top: 1px solid;
+        width: 906px;
+        margin: 0 auto;
     }
     &__title{
         font-weight: 400;
@@ -18,6 +19,10 @@
         border: 0;
         background-color: transparent;
         margin-top: 25px;
+        transition: all 0.3s;
+        &[data-arrow="left"]{
+            opacity: 0;
+        }
     }
     &__list{
         overflow: hidden;
