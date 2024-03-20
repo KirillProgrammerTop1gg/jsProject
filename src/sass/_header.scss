@@ -1,0 +1,56 @@
+.header {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+&__section{
+  display: flex;
+}
+&__img {
+  width: 40px;
+  height: 40px;
+}
+&__magician{
+  margin-left: 8px;
+}
+&__code{
+  font-family: 'Montserrat Alternates';
+}
+&__magic{
+  font-family: 'Sacramento';
+  margin-right: 81px;
+}
+&__list{
+  display: flex;
+
+}
+// &__item{
+
+// }
+&__text{
+  font-family: 'Montserrat Alternates';
+  margin-right: 50px;
+}
+&__call{
+  display: flex;
+}
+&__switch{
+display: flex;
+margin-left: 50px;
+}
+&__switcher{
+width: 40px;
+height: 20px;
+border-radius: 11px;
+border: 1px;
+background-color: #7A7A7A;
+margin-right: 51px;
+}
+// &__icon{
+
+// }
+&__greeter{
+  font-family: 'Montserrat Alternates';
+}
+}
