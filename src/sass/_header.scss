@@ -1,5 +1,7 @@
 .header {
   background-color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
 &__section{
   display: flex;
   align-items: center;
@@ -32,6 +34,7 @@
   font-size: 12px;
   color: #000;
   margin-top: 2px;
+  line-height: 17.51px;
 }
 &__list{
   display: flex;
@@ -43,6 +46,7 @@
   font-weight: 400;
   font-size: 12px;
   color: #000;
+  line-height: 14.63px;
 }
 &__call{
   display: flex;
@@ -57,9 +61,14 @@ border: 1px;
 background-color: #7A7A7A;
 margin-right: 51px;
 }
-&__icon{
-  width: 40px;
+&__box {
+  width: 20.5px;
   height: 20px;
+  background-color: #FFFFFF;
+  border: 0.5px #000000 solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 &__greeter{
   font-weight: 400;
