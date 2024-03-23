@@ -77,25 +77,24 @@
         position: absolute;
         width: 30px;
         height: 30px;
+        &.sword__img {
+            top: 154px;
+            left: 41px;
+        }
+    
+        &.puzzle__img {
+            top: 230px;
+            left: 85px;
+        }
+    
+        &.ttt__img {
+            top: 230px;
+            right: 85px;
+        }
+    
+        &.game__img {
+            top: 154px;
+            right: 41px;
+        }
     }
-}
-
-.sword__img{
-    top: 154px;
-    left: 41px;
-}
-
-.puzzle__img{
-    top: 230px;
-    left: 85px;
-}
-
-.ttt__img{
-    top: 230px;
-    right: 85px;
-}
-
-.game__img{
-    top: 154px;
-    right: 41px;
 }
