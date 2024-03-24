@@ -1,47 +1,49 @@
-.guess-the-number__title {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 36px;
-    font-family: "Montserrat Alternates", sans-serif;
-}
-.guess-the-number__input {
-    width: 115px;
-    height: 35px;
-    position: relative;
-    border: none;
-    border-radius: 60 0 0 60;
-    background-color: #d7d7d7;
-    margin-left: 250px;
-    padding-left: 10px;
-    padding-bottom: 3px;
-    font-size: 12px;
-    font-family: "Montserrat Alternates", sans-serif;
-    &:hover {
-        border: none;
+.guess-the-number{
+    &__section{
+        padding: 36px 0;
+        width: 576px;
+        margin: 0 auto;
     }
-}
-.guess-the-number__button {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    border: none;
-    background-color: black;
-    border-radius: 0 60 60 0;
-    font-family: "Montserrat Alternates", sans-serif;
-}
-.guess-the-number__text {
-    margin-left: 602px;
-    margin-top: -25px;
-    font-family: "Montserrat Alternates", sans-serif;
-}
-.guess-the-number__svg {
-    fill: #fff;
-    width: 15px;
-    height: 15px;
-}
-.guess-the-number__line {
-    background-color: #000000;
-    height: 0;
-    width: 536px;
-    margin: auto;
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__list {
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__field {
+        display: flex;
+        width: 150px;
+        height: 35px;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: #000;
+        border-radius: 20px;
+    }
+    &__input {
+        border: 0;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 115px;
+        height: 35px;
+        background: #d7d7d7;
+        font-weight: 400;
+        font-size: 12px;
+        color: #7e7e7e;
+    }
+    &__but {
+        display: block;
+        background-color: unset;
+        border: 0;
+        margin: 10px;
+    }
+    &__result {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+    }
 }
