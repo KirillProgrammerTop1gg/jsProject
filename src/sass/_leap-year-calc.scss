@@ -1,6 +1,6 @@
 .leap-year{
     &__section{
-        padding: 36px 0;
+        padding-bottom: 36px;
         width: 576px;
         margin: 0 auto;
     }
@@ -38,7 +38,9 @@
         display: block;
         background-color: unset;
         border: 0;
-        margin: 10px;
+        width: 35px;
+        
+        padding: 10px;
     }
     &__result{
         display: flex;
