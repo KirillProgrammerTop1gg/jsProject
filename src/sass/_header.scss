@@ -12,6 +12,9 @@
   gap: 50px;
   min-width: 370px;
 }
+&__item:nth-child(1){
+  position: relative;
+}
 &__text{
   font-weight: 400;
   font-size: 12px;
@@ -52,5 +55,42 @@ margin-right: 51px;
 &__greeter{
   font-weight: 400;
   font-size: 12px;
+}
+&__svg{
+  transform: rotate(180deg);
+  transition: all 0.2s;
+  &.active{
+    transform: rotate(0deg);
+  }
+}
+&__selector{
+  position: absolute;
+  width: 160px;
+  height: 105px;
+  bottom: -115px;
+  left: -30px;
+  // background-color: white;
+  border: 1px solid #000;
+  border-top: 0;
+  color: #000;
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+  transition: all 0.2s;
+  &.active{
+    opacity: 1;
+  }
+}
+&__select{
+  width: 158px;
+  height: 34.7px;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+  &:nth-child(3){
+    border-radius: 0 0 20px 20px;
+  }
 }
 }
