@@ -1,3 +1,4 @@
+const eventsEl = document.querySelectorAll('.rps__but');
 const paperEventEl = document.querySelector('.rps__but[data-event="paper"]');
 const stoneEventEl = document.querySelector('.rps__but[data-event="stone"]');
 const scissorsEventEl = document.querySelector('.rps__but[data-event="scissors"]');
@@ -6,6 +7,7 @@ const resultsEl = document.querySelector('.rps__results');
 const compVarEl = document.querySelector('.rps__compVar');
 let comp = 0;
 let player = 0;
+let playerEv = '';
 
 const showResults = (wls) => {
     if (wls) {
@@ -47,7 +49,12 @@ const rpsGame = (ev) => {
             break;
     }
 }
-paperEventEl.addEventListener('click', () => rpsGame('paper'));
-scissorsEventEl.addEventListener('click', () => rpsGame('scissors'));
-stoneEventEl.addEventListener('click', () => rpsGame('stone'));
-compVarEl.addEventListener('click', () => rpsGame(['paper', 'stone', 'scissors'][Math.round(Math.random() * 2)]));
+const activePlayEv = (plaEv, playerEvEl) => {
+    eventsEl.forEach(eventEl => eventEl.style.backgroundColor = '#000')
+    playerEv = plaEv;
+    playerEvEl.style.backgroundColor = 'rgb(189, 189, 189)';
+}
+paperEventEl.addEventListener('click', () => activePlayEv('paper', paperEventEl));
+scissorsEventEl.addEventListener('click', () => activePlayEv('scissors', scissorsEventEl));
+stoneEventEl.addEventListener('click', () => activePlayEv('stone', stoneEventEl));
+compVarEl.addEventListener('click', () => rpsGame(playerEv));
