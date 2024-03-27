@@ -19,6 +19,7 @@
     border: 2px #000000 solid;
     position: relative;
     cursor: pointer;
+    overflow: auto;
   }
   &__click {
     background-color: transparent;
