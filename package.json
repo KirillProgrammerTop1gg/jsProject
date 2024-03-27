@@ -5,7 +5,8 @@
   "homepage": "https://kirillprogrammertop1gg.github.io/jsProject/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /jsProject/"
+    "build": "parcel build src/*.html --public-url /jsProject/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
