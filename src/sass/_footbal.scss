@@ -1,10 +1,15 @@
 .football{
-  display: flex;
-  justify-content: center;
-  padding-top: 36px;
   padding-bottom: 36px;
+  &__title{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
   &__box{
     display: flex;
+    margin: 36px auto 0;
+    width: 720px;
+    height: 220px;
   }
   &__game{
     background-color: #5ABB58;
