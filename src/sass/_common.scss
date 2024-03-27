@@ -16,6 +16,7 @@ main{
     width: 1440px;
     display: block;
     margin: 0 auto;
+    height: 3202px;
 }
 .title{
     font-weight: 400;
@@ -26,13 +27,14 @@ main{
 .border{
     border-top: 1px solid;
     width: 536px;
-    margin: 0 auto;
+    margin: 0 auto 36px;
 }
 .container{
     padding-top: 36px;
     width: 1090px;
     background: #fff;
     margin: 0 auto;
+    height: 100%;
 }
 .logo{
     display: flex;
