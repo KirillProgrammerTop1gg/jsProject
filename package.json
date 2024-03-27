@@ -2,7 +2,7 @@
   "name": "jsProject",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://KirillProgrammerTop1gg.github.com/jsProject/",
+  "homepage": "https://kirillprogrammertop1gg.github.io/jsProject/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /jsProject/"
