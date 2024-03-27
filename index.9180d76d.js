@@ -1,0 +1,6 @@
+!function(){let e=document.querySelector('.rps__but[data-event="paper"]'),r=document.querySelector('.rps__but[data-event="stone"]'),s=document.querySelector('.rps__but[data-event="scissors"]'),t=document.querySelector(".rps__result"),o=document.querySelector(".rps__results"),n=document.querySelector(".rps__compVar"),u=0,c=0,a=e=>{e?(t.innerHTML="Комп’ютер виграв раунд!",t.style.color="#900",u++):(t.innerHTML="Ви виграли раунд!",t.style.color="#039900",c++),o.innerHTML=`
+        \u{420}\u{430}\u{445}\u{443}\u{43D}\u{43E}\u{43A}: <br>
+        \u{41A}\u{43E}\u{43C}\u{43F}\u{2019}\u{44E}\u{442}\u{435}\u{440} - ${u} <br>
+        \u{412}\u{438} - ${c}
+    `},l=e=>{let r=["paper","stone","scissors"][Math.round(2*Math.random())];if(console.log(r,e),t.style.display="block",r===e){t.innerHTML="нічия",t.style.color="#000";return}switch(r){case"paper":a("stone"===e?1:0);break;case"scissors":a("paper"===e?1:0);break;case"stone":a("scissors"===e?1:0)}};e.addEventListener("click",()=>l("paper")),s.addEventListener("click",()=>l("scissors")),r.addEventListener("click",()=>l("stone")),n.addEventListener("click",()=>l(["paper","stone","scissors"][Math.round(2*Math.random())]))}();
+//# sourceMappingURL=index.9180d76d.js.map
