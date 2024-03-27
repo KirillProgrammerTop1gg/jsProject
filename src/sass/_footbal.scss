@@ -12,9 +12,8 @@
     height: 220px;
     border-radius: 37px;
     border: 2px #000000 solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    cursor: pointer;
   }
   &__click {
     background-color: transparent;
@@ -25,5 +24,9 @@
   &__ball{
     width: 50px;
     height: 50px;
+    top: 50%;
+    left: 48%;
+    transform: translateY(-50%);
+    position: absolute;
   }
 }
