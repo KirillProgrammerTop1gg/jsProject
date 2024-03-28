@@ -31,6 +31,12 @@
     font-size: 12px;
     color: #7e7e7e;
     appearance: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms, color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms;
+    &:hover {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
   }
   &__button {
     border: none;
@@ -70,6 +76,14 @@
     padding: 10px 20px;
     font-weight: 400;
     font-size: 12px;
+    box-shadow: 3px 3px 0px 0px #00000040;
     color: #7e7e7e;
+    transition: background-color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms, color 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms, border 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 50ms, box-shadow 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 50ms;
+    &:hover{
+      background-color: #000000;
+      color: green;
+      border: greenyellow 2px solid;
+      box-shadow: 3px 3px 0px 0px lightgreen;
+    }
   }
 }
