@@ -71,8 +71,8 @@ margin-right: 51px;
 &__selector{
   position: absolute;
   width: 160px;
-  height: 105px;
-  bottom: -115px;
+  height: 140px;
+  bottom: -150px;
   left: -30px;
   // background-color: white;
   border: 1px solid #000;
@@ -86,6 +86,7 @@ margin-right: 51px;
   }
 }
 &__select{
+  border: 0;
   width: 158px;
   height: 34.7px;
   font-weight: 400;
@@ -99,7 +100,10 @@ margin-right: 51px;
     background-color: #000 !important;
     color: white !important;
   }
-  &:nth-child(3){
+  &:nth-child(1){
+    background-color: #f1f1f1;
+  }
+  &:nth-child(4){
     border-radius: 0 0 20px 20px;
   }
 }

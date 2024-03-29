@@ -84,12 +84,13 @@ const activeSelect = (selectEl, category) => {
     toggleSelector();
     selectEls.forEach(selectEl => selectEl.style.backgroundColor = 'transparent');
     selectEl.style.backgroundColor = '#f1f1f1';
-    sectionsEls.forEach(sectionEl => sectionEl.style.display = sectionEl.getAttribute('category') === category ? 'block' : 'none');
+    category === 'all' ? sectionsEls.forEach(sectionEl => sectionEl.style.display = 'block') : sectionsEls.forEach(sectionEl => sectionEl.style.display = sectionEl.getAttribute('category') === category ? 'block' : 'none');
 }
 
-selectEls[0].addEventListener('click', () => activeSelect(selectEls[0], 'numerical'));
-selectEls[1].addEventListener('click', () => activeSelect(selectEls[1], 'game'));
-selectEls[2].addEventListener('click', () => activeSelect(selectEls[2], 'acquaintance'));
+selectEls[0].addEventListener('click', () => activeSelect(selectEls[0], 'all'));
+selectEls[1].addEventListener('click', () => activeSelect(selectEls[1], 'numerical'));
+selectEls[2].addEventListener('click', () => activeSelect(selectEls[2], 'game'));
+selectEls[3].addEventListener('click', () => activeSelect(selectEls[3], 'acquaintance'));
 
 const themeChange = (theme) => {
     iconEl.style.transform = theme ? 'translate(20px)' : 'translate(0px)';
