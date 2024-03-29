@@ -19,13 +19,13 @@
     border: 2px #000000 solid;
     position: relative;
     cursor: pointer;
-    overflow: auto;
+    overflow: hidden;
   }
   &__click {
     background-color: transparent;
     width: 720px;
     height: 220px;
-    visibility: hidden;
+    overflow: hidden;
   }
   &__ball{
     width: 50px;
@@ -40,7 +40,7 @@
     position: absolute;
     width: 110px;
     height: auto;
-    top: 50px;
+    top: 60px;
   }
   &__left{
     transform: rotate(-90deg);

@@ -1,11 +1,8 @@
-const field = document.getElementById("field")
-const ball = document.getElementById("ball")
+const field = document.querySelector(".football__box")
+const ball = document.querySelector(".football__ball")
 
 field.addEventListener('click', (event) => {
-  // console.log(event.clientX)
-  console.log(ball, event, event.offsetX, event.offsetY)
-  if (event.offsetY <= 180 && event.offsetY >= 15 && event.offsetX >= 30 && event.offsetX <= 685) {
-    ball.style.left = `${event.offsetX - 25}px`;
-    ball.style.top = `${event.offsetY + 10}px`;
-  }
+  // console.log(event, event.clientX, event.clientY)
+  ball.style.left = `${event.clientX - Math.round(field.getBoundingClientRect().left)}px`;
+  ball.style.top = `${event.clientY - Math.round(field.getBoundingClientRect().top)}px`;
 })
