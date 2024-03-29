@@ -28,10 +28,12 @@ const showResults = (wls) => {
 }
 
 const rpsGame = (ev) => {
+    if (ev === '') {
+        resultEl.innerHTML = 'Ви не вказали дію!'; return;
+    }
     const robotEvents = ['paper', 'stone', 'scissors'];
     const robotEv = robotEvents[Math.round(Math.random() * 2)];
     console.log(robotEv, ev)
-    resultEl.style.display = 'block';
     if (robotEv === ev) {
         resultEl.innerHTML = 'нічия';
         resultEl.style.color = '#000';

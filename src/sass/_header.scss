@@ -20,6 +20,8 @@
   font-size: 12px;
   cursor: pointer;
   transition: all 0.2s;
+  text-decoration: none;
+  color: inherit;
   &:hover{
     color: rgb(189, 189, 189);
   }
