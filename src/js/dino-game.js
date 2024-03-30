@@ -74,15 +74,15 @@ const checkCollision = () => {
 };
 
 document.addEventListener('keydown', (e) => {
+    console.log(isAnimating)
     if (e.key === 'w' && !isAnimating) {
         isAnimating = true;
         player.style.bottom = '85px';
-        setTimeout(() => {
-            player.style.bottom = '15px';
-            isAnimating = false;
-        }, 400);
+        setTimeout(() => player.style.bottom = '15px', 400);
+        setTimeout(() => isAnimating = false, 600)
     }
 });
+
 
 butEl.addEventListener('click', () => {
     overlayEl.style.display = 'none';
