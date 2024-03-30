@@ -13,6 +13,7 @@ let points = 0;
 let timer1;
 let timer2;
 let timer3;
+let isAnimating = false;
 
 const resetGame = () => {
     player.style.left = '100px';
@@ -73,10 +74,12 @@ const checkCollision = () => {
 };
 
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'w') {
+    if (e.key === 'w' && !isAnimating) {
+        isAnimating = true;
         player.style.bottom = '85px';
         setTimeout(() => {
             player.style.bottom = '15px';
+            isAnimating = false;
         }, 400);
     }
 });
