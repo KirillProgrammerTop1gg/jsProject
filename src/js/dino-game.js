@@ -74,7 +74,6 @@ const checkCollision = () => {
 };
 
 document.addEventListener('keydown', (e) => {
-    console.log(isAnimating)
     if (e.key === 'w' && !isAnimating) {
         isAnimating = true;
         player.style.bottom = '85px';
