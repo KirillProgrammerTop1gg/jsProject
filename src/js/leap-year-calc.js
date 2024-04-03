@@ -10,5 +10,6 @@ butEl.addEventListener('click', () => {
     else {
         resultEl.innerHTML = inputEl.value % 4 === 0 ? 'Ви народилися у високосний рік!' : 'Ви народилися не у високосний рік!';
         resultEl.style.color = inputEl.value % 4 === 0 ? '#039900' : '#900';
+        inputEl.value = '';
     }
 });

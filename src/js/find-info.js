@@ -121,11 +121,12 @@ const showScientists = (scientistsToShow) => {
     scientistsEl.innerHTML = '';
     if (Array.isArray(scientistsToShow)) {
         scientistsToShow.forEach((scientistId) => scientistsEl.innerHTML += `
-            <li class="info__scientist" data-id="${scientistId}">
+            <li class="info__scientist showAnim" data-id="${scientistId}">
                 <p class="info__name">${scientists.find(scientist => scientist.id === scientistId).name} ${scientists.find(scientist => scientist.id === scientistId).surname}</p>
                 <p class="info__lifeYears">${scientists.find(scientist => scientist.id === scientistId).born}-${scientists.find(scientist => scientist.id === scientistId).dead} years</p>
             </li>
         `);
+        setTimeout(() => scientistsToShow.forEach((scientistId) => document.querySelector(`.info__scientist[data-id="${scientistId}"]`).classList.remove('showAnim')), 200);
     }
     else {
         scientistsEl.innerHTML += `

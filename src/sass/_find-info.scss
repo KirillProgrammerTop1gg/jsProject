@@ -19,6 +19,7 @@
         margin: 36px auto 0;
     }
     &__scientist{
+        transition: all 0.3s;
         width: 100px;
         height: 100px;
         border-radius: 20px;
@@ -32,6 +33,9 @@
         gap: 10px;
         font-size: 8px;
         color: #000;
+        &.showAnim{
+            opacity: 0;
+        }
     }
     &__prompts{
         margin-top: 36px;
