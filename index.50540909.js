@@ -1,2 +1,0 @@
-!function(){let e=document.querySelector(".leap-year__but"),t=document.querySelector(".leap-year__input"),l=document.querySelector(".leap-year__result");e.addEventListener("click",()=>{isNaN(t.value)||""===t.value?(l.innerHTML="Ви не ввели число",l.style.color="true"===localStorage.getItem("theme")?"#fff":"#000"):(l.innerHTML=t.value%4==0?"Ви народилися у високосний рік!":"Ви народилися не у високосний рік!",l.style.color=t.value%4==0?"#039900":"#900")})}();
-//# sourceMappingURL=index.50540909.js.map

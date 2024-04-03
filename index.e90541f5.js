@@ -7,15 +7,15 @@ const a=[{name:"Albert",surname:"Einstein",born:1879,dead:1955,id:1},{name:"Isaa
     <li class="info__prompt">
         <button class="info__but" data-promptNum="${e}">${a}</button>
     </li>
-`);const r=n=>{e.innerHTML="",Array.isArray(n)?n.forEach(n=>e.innerHTML+=`
-            <li class="info__scientist" data-id="${n}">
+`);const i=n=>{e.innerHTML="",Array.isArray(n)?(n.forEach(n=>e.innerHTML+=`
+            <li class="info__scientist showAnim" data-id="${n}">
                 <p class="info__name">${a.find(a=>a.id===n).name} ${a.find(a=>a.id===n).surname}</p>
                 <p class="info__lifeYears">${a.find(a=>a.id===n).born}-${a.find(a=>a.id===n).dead} years</p>
             </li>
-        `):e.innerHTML+=`
+        `),setTimeout(()=>n.forEach(a=>document.querySelector(`.info__scientist[data-id="${a}"]`).classList.remove("showAnim")),200)):e.innerHTML+=`
             <li class="info__scientist" data-id="${n}">
                 <p class="info__name">${n.name} ${n.surname}</p>
                 <p class="info__lifeYears">${n.born}-${n.dead} years</p>
             </li>
-        `};n.addEventListener("click",e=>{switch(e.target.getAttribute("data-promptNum")){case"0":r(a.filter(a=>a.born>1800&&a.born<=1900).map(a=>a.id));break;case"1":r(a.sort((a,e)=>a.name.localeCompare(e.name)).map(a=>a.id));break;case"2":r(a.sort((a,e)=>e.dead-e.born-(a.dead-a.born)).map(a=>a.id));break;case"3":r(a.sort((a,e)=>e.born-a.born)[0]);break;case"4":r(a.find(a=>"Albert"===a.name&&"Einstein"===a.surname));break;case"5":r(a.filter(a=>a.surname.startsWith("C")).map(a=>a.id));break;case"6":r(a.filter(a=>!a.name.startsWith("A")).map(a=>a.id));break;case"7":r([Math.max(...a.map(a=>a.dead-a.born)),Math.min(...a.map(a=>a.dead-a.born))].map(e=>a.find(a=>a.dead-a.born===e).id));break;case"8":r(a.filter(a=>a.name[0]===a.surname[0]).map(a=>a.id))}});
-//# sourceMappingURL=index.b4b4d559.js.map
+        `};n.addEventListener("click",e=>{switch(e.target.getAttribute("data-promptNum")){case"0":i(a.filter(a=>a.born>1800&&a.born<=1900).map(a=>a.id));break;case"1":i(a.sort((a,e)=>a.name.localeCompare(e.name)).map(a=>a.id));break;case"2":i(a.sort((a,e)=>e.dead-e.born-(a.dead-a.born)).map(a=>a.id));break;case"3":i(a.sort((a,e)=>e.born-a.born)[0]);break;case"4":i(a.find(a=>"Albert"===a.name&&"Einstein"===a.surname));break;case"5":i(a.filter(a=>a.surname.startsWith("C")).map(a=>a.id));break;case"6":i(a.filter(a=>!a.name.startsWith("A")).map(a=>a.id));break;case"7":i([Math.max(...a.map(a=>a.dead-a.born)),Math.min(...a.map(a=>a.dead-a.born))].map(e=>a.find(a=>a.dead-a.born===e).id));break;case"8":i(a.filter(a=>a.name[0]===a.surname[0]).map(a=>a.id))}});
+//# sourceMappingURL=index.e90541f5.js.map
